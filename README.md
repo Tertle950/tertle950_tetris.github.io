@@ -1,2 +1,11 @@
-# witheringwillow.github.io
-A practice for HTML and CSS, I might make this into something later.
+# tertle950tetris.github.io
+```
+New controls:
+ s    - hard drop
+zxc   - move pieces
+
+space - hold piece
+ f    - 180 rotation
+   m  - cw rotation
+    , - ccw rotation
+```
