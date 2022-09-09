@@ -7,6 +7,6 @@ zxc   - move pieces
 
 space - hold piece
  f    - 180 rotation
-   m  - cw rotation
-    , - ccw rotation
+    , - cw rotation
+   m - ccw rotation
 ```
