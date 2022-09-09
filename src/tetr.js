@@ -342,7 +342,7 @@ function press(e) {
 		}
 		current_x++;
 	}
-	if (e.key == "m") {
+	if (e.key == ",") {
 		var rotate_status = rotate('cw');
 		if(rotate_status[0]) {
 			current_rot++;
@@ -355,7 +355,7 @@ function press(e) {
 			}
 		}
 	}
-	if (e.key == ",") {
+	if (e.key == "m") {
 		var rotate_status = rotate('ccw');
 		if(rotate_status[0]) {
 			current_rot--;
