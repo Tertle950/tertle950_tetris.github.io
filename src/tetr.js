@@ -315,14 +315,14 @@ function press(e) {
 		return;
 	}
 	
-	if (e.key == "ArrowDown") {
+	if (e.key == "x") {
 		if (!validPlace(current_shape.rot(current_rot), current_x, current_y + 1)) {
 			return
 		}
 		current_y++;
 		frames_until_down = 50;
 	}
-	if (e.key == "ArrowLeft") {
+	if (e.key == "z") {
 		if (!validPlace(current_shape.rot(current_rot), current_x - 1, current_y)) {
 			return
 		}
@@ -332,7 +332,7 @@ function press(e) {
 		}
 		current_x--;
 	}
-	if (e.key == "ArrowRight") {
+	if (e.key == "c") {
 		if (!validPlace(current_shape.rot(current_rot), current_x + 1, current_y)) {
 			return
 		}
@@ -342,7 +342,7 @@ function press(e) {
 		}
 		current_x++;
 	}
-	if (e.key == "ArrowUp") {
+	if (e.key == "m") {
 		var rotate_status = rotate('cw');
 		if(rotate_status[0]) {
 			current_rot++;
@@ -355,7 +355,7 @@ function press(e) {
 			}
 		}
 	}
-	if (e.key == "z") {
+	if (e.key == ",") {
 		var rotate_status = rotate('ccw');
 		if(rotate_status[0]) {
 			current_rot--;
@@ -368,7 +368,7 @@ function press(e) {
 			}
 		}
 	}
-	if (e.key == "a") {
+	if (e.key == "f") {
 		if (!validPlace(current_shape.rot(current_rot + 2), current_x, current_y)) {
 			return
 		}
@@ -378,7 +378,7 @@ function press(e) {
 		}
 		current_rot += 2;
 	}
-	if (e.key == " ") {
+	if (e.key == "s") {
 		while (validPlace(current_shape.rot(current_rot), current_x, current_y + 1)){
 			current_y++;
 		}
@@ -386,7 +386,7 @@ function press(e) {
 		held = false;
 		resetMinos();
 	}
-	if (e.key == "c") {
+	if (e.key == " ") {
 		// hold piece
 		// if empty: put current into hold and get a new block
 		// if full: swap current and held
